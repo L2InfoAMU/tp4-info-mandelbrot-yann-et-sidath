@@ -168,4 +168,10 @@ public class ComplexTest {
         assertEquals(0, Complex.ZERO.squaredModulus());
         assertEquals(1, Complex.I.squaredModulus());
     }
+
+    @Test
+    void testModulus() {
+        assertEquals(0, Complex.ZERO.modulus());
+        assertEquals(Math.sqrt(2), onePlusI.modulus());
+    }
 }
