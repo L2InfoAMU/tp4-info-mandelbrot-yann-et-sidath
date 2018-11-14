@@ -161,4 +161,11 @@ public class ComplexTest {
         assertEquals(two, Complex.ONE.add(Complex.ONE));
         assertEquals(twoI, Complex.I.add(Complex.I));
     }
+
+    @Test
+    void testSquaredModulus() {
+        assertEquals(1, Complex.ONE.squaredModulus());
+        assertEquals(0, Complex.ZERO.squaredModulus());
+        assertEquals(1, Complex.I.squaredModulus());
+    }
 }
