@@ -154,4 +154,11 @@ public class ComplexTest {
         assertEquals(Complex.ONE, Complex.real(1));
         assertEquals(Complex.ZERO,Complex.real(0));
     }
+
+    @Test
+    void testAdd() {
+        assertEquals(onePlusI, Complex.ONE.add(Complex.I));
+        assertEquals(two, Complex.ONE.add(Complex.ONE));
+        assertEquals(twoI, Complex.I.add(Complex.I));
+    }
 }
